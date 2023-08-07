@@ -1,0 +1,14 @@
+<%= cable_ready_stream_from :visitors %>
+<div>
+    <h2>Load translation from show.html.erb</h2>
+    <%= t('hello') %>
+    <h2>Load translation with regular partial from show.html.erb</h2>
+    <%= render "shared/hello" %>
+    <h2>Load translation with futurism partial from show.html.erb</h2>
+
+    <%= futurize partial: 'shared/hello', extends: :div do %>
+      <div class="placeholder">
+        Loading ...
+      </div>
+    <% end %>
+</div>

@@ -68,7 +68,6 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
-    bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -202,11 +201,6 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    web-console (4.2.0)
-      actionview (>= 6.0.0)
-      activemodel (>= 6.0.0)
-      bindex (>= 0.4.0)
-      railties (>= 6.0.0)
     webdrivers (5.3.1)
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
@@ -226,7 +220,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  futurism (= 1.2.0)
+  futurism
   importmap-rails
   jbuilder
   puma (~> 5.0)
@@ -238,7 +232,6 @@ DEPENDENCIES
   stimulus-rails
   turbo-rails
   tzinfo-data
-  web-console
   webdrivers
 
 RUBY VERSION

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@stimulus_reflex/futurism": "^1.2.0",
+    "cable_ready": "^5.0.1"
+  }
+}
