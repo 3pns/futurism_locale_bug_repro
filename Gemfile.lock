@@ -218,9 +218,10 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  cable_ready (= 5.0.1)
   capybara
   debug
-  futurism
+  futurism (= 1.2.0)
   importmap-rails
   jbuilder
   puma (~> 5.0)

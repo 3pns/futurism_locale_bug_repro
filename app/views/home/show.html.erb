@@ -1,14 +1,15 @@
+<%= action_cable_meta_tag %>
 <%= cable_ready_stream_from :visitors %>
 <div>
     <h2>Load translation from show.html.erb</h2>
-    <%= t('hello') %>
-    <h2>Load translation with regular partial from show.html.erb</h2>
+    <%= t('hello') %> [<%= I18n.locale %>]
+    <h2>Load translation by calling render with shared/hello partial from show.html.erb</h2>
     <%= render "shared/hello" %>
-    <h2>Load translation with futurism partial from show.html.erb</h2>
+    <h2>Load translation by calling futurize with shared/hello partial from show.html.erb</h2>
 
     <%= futurize partial: 'shared/hello', extends: :div do %>
       <div class="placeholder">
-        Loading ...
+        Loading ... [<%= I18n.locale %>]
       </div>
     <% end %>
 </div>

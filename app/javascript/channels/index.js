@@ -1,7 +1,10 @@
 // Import all the channels to be used by Action Cable
-import "./example_channel"
 import * as Futurism from '@stimulus_reflex/futurism'
-import consumer from "./consumer"
 
+console.log("init channels")
+import consumer from 'channels/consumer'
+import "channels/example_channel"
+
+console.log("init Futurism")
 Futurism.initializeElements()
 Futurism.createSubscription(consumer)

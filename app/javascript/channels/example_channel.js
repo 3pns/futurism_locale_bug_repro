@@ -1,5 +1,5 @@
 import CableReady from 'cable_ready'
-import consumer from "./consumer"
+import consumer from "channels/consumer"
 
 consumer.subscriptions.create("ExampleChannel", {
   connected() {
